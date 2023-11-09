@@ -67,6 +67,14 @@ public class JobData {
             jobs = findByValue(value);
             return jobs;
         }
+
+
+//        if(value.equals("")){
+//            return findAll();
+//        }
+
+
+
         for (Job job : allJobs) {
 
             String aValue = getFieldValue(job, column);
@@ -107,6 +115,7 @@ public class JobData {
         loadData();
 
         ArrayList<Job> jobs = new ArrayList<>();
+
 
         for (Job job : allJobs) {
 

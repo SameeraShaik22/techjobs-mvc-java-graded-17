@@ -28,7 +28,7 @@ public class ListController  extends JobData{
         columnChoices.put("positionType", "Position Type");
         columnChoices.put("coreCompetency", "Skill");
 
-        tableChoices.put("all","ViewAll");
+        tableChoices.put("all","View All");
         tableChoices.put("employer", JobData.getAllEmployers());
         tableChoices.put("location", JobData.getAllLocations());
         tableChoices.put("positionType", JobData.getAllPositionTypes());
@@ -45,7 +45,7 @@ public class ListController  extends JobData{
         model.addAttribute("tableChoices", tableChoices);
 
 
-        model.addAttribute("Veiw All",JobData.findAll());
+        model.addAttribute("View All",JobData.findAll());
         model.addAttribute("employers", JobData.getAllEmployers());
         model.addAttribute("locations", JobData.getAllLocations());
         model.addAttribute("positions", JobData.getAllPositionTypes());

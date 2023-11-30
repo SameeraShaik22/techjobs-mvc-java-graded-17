@@ -32,7 +32,7 @@ public class SearchController {
 
 
 
-@PostMapping(value = "/results")
+@PostMapping(value = "results")
     public String displaySearchResults(Model model, @RequestParam String searchType ,@RequestParam String  searchTerm) {
         ArrayList<Job> jobs;
         if (searchTerm.equals("all") || searchTerm.equals("")){
